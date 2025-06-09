@@ -45,11 +45,13 @@ Before setting up the project, ensure the following tools are installed on your 
    npm install
 
 2. **Set up Fabric Network**
+   ```bash
    cd fabric-sample/test-network
    ./network.sh up
    ./network.sh createChannel
    
-3. **Deploy Chaincode to Fabric Network**
+4. **Deploy Chaincode to Fabric Network**
+   ```bash
    ./network.sh deployCC -ccn chaincode_name -ccp chaincode_path -ccl javascript
    
 ---
@@ -59,6 +61,7 @@ Before setting up the project, ensure the following tools are installed on your 
 After deploying your chaincode (`healthcare`) on `mychannel`, you can use the following CLI commands to invoke or query functions.
 
 1. **Invoke InitDoctorLedger function from doctor's chaincode**
+   ```bash
    peer chaincode invoke -o localhost:7050 \
    --ordererTLSHostnameOverride orderer.example.com \
    --tls \
@@ -70,7 +73,8 @@ After deploying your chaincode (`healthcare`) on `mychannel`, you can use the fo
    --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt \
    -c '{"function":"InitDoctorLedger","Args":[]}'
 
-2. **Query to get all the doctors**
+3. **Query to get all the doctors**
+   ```bash
    peer chaincode query -C mychannel -n healthcare -c '{"function":"GetAllDoctors","Args":[]}'
    
 ---
