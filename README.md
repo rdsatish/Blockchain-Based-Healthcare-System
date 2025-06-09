@@ -22,3 +22,25 @@ A simplified blockchain-based healthcare system built using **Hyperledger Fabric
 - **Performance Tool**: Hyperledger Caliper (for benchmarking)
 
 ---
+
+## 🛠️ Prerequisites
+
+Before setting up the project, ensure the following tools are installed on your system:
+
+- [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
+- [Node.js](https://nodejs.org/) (version ≥ 14.x recommended)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+- [Go](https://go.dev/) (only if you wish to test Go-based chaincode variants)
+- [Hyperledger Fabric binaries and samples](https://hyperledger-fabric.readthedocs.io/en/latest/install.html)
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**  
+   git clone [https://github.com/yourusername/secure-healthcare-fabric.git](https://github.com/rdsatish/Blockchain-Based-Healthcare-System.git)
+   cd Blockchain-Based-Healthcare-System
+
+---
+
