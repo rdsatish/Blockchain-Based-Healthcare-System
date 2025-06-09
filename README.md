@@ -39,6 +39,7 @@ Before setting up the project, ensure the following tools are installed on your 
 ## 📦 Installation & Setup
 
 1. **Clone the repository**
+   ```bash
    git clone https://github.com/rdsatish/Blockchain-Based-Healthcare-System.git
    cd Blockchain-Based-Healthcare-System
    npm install
@@ -48,7 +49,7 @@ Before setting up the project, ensure the following tools are installed on your 
    ./network.sh up
    ./network.sh createChannel
    
-4. **Deploy Chaincode to Fabric Network**
+3. **Deploy Chaincode to Fabric Network**
    ./network.sh deployCC -ccn chaincode_name -ccp chaincode_path -ccl javascript
    
 ---
